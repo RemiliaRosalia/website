@@ -9,7 +9,9 @@ import MyWebsite from '../projects/MyWebsite.vue'
 import MashnCloth from '../projects/MayaMashnCloth.vue'
 import AmyView from '@/views/AmyView.vue'
 import NibbleKnight from '@/projects/NibbleKnight.vue'
-import Models2024 from '@/projects/3DModels2024.vue'
+import Models2024 from '@/projects/3DModels.vue'
+import SaveThePrincess from '@/projects/SaveThePrincess.vue'
+
 const routes = [
   {
     path: '/',
@@ -43,32 +45,32 @@ const routes = [
   //},
   {
     path: '/project/Journeys_and_Jazz_The_Fruits_of_the_Gods',
-    name: "JourneysAndJazzTheFruitsOfTheGods",
+    name: "Journeys_and_Jazz_The_Fruits_of_the_Gods",
     component: JNJFotG
   },
   {
     path: '/project/Gift_of_Pain',
-    name: "GiftOfPain",
+    name: "Gift_Of_Pain",
     component: GiftOfPain
   },
   {
     path: '/project/Nerg_Model',
-    name: "NergModel",
+    name: "Nerg_Model",
     component: NergModel
   },
   {
     path: '/project/Royal_Flush',
-    name: "RoyalFlush",
+    name: "Royal_Flush",
     component: RoyalFlush
   },
   {
     path: '/project/My_Website',
-    name: "MyWebsite",
+    name: "My_Website",
     component: MyWebsite
   },
   {
     path: '/project/MASH_nCloth',
-    name: "MashnCloth",
+    name: "Mash_nCloth",
     component: MashnCloth
   },
   {
@@ -77,11 +79,26 @@ const routes = [
     component: NibbleKnight
   },
   {
-    path: '/project/3DModels2024',
+    path: '/project/3DModels/:year',
     name: "3DModels2024",
     component: Models2024
   },
-
+  {
+    path: '/project/SaveThePrincess',
+    name: "Save_The_Princess",
+    component: SaveThePrincess
+  },
+  // {
+  //   path: '/project/3DModels',
+  //   name: "3DModels",
+  //   component: Models
+  // },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'home',
+    component: HomeView,
+    props: true
+  },
   
 ]
 

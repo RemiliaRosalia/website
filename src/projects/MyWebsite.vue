@@ -1,6 +1,15 @@
 <template>
     <div class="about">
-      <h1>I hate this site lowkey</h1>
+      <h1>WiP</h1>
     </div>
   </template>
+  <script>
+  export default 
+  {
+      mounted () 
+      {
+        window.scrollTo(0, 0)
+      }
+  }
+  </script>
   

@@ -1,7 +1,8 @@
 <template>
     <div class="post">
       <!--router-link :to="{name: 'project', params: {id: post.id}}"-->
-      <router-link :to="{name: post.url}">
+      <!--router-link :to="{name: post.url}"-->
+      <router-link :to="{path: '/project/' + post.url}">
         <h3> {{ post.title }}</h3>
         <img :src="post.icon" >
       </router-link>
@@ -47,5 +48,4 @@
   </script>
   
   <style>
-  
   </style>

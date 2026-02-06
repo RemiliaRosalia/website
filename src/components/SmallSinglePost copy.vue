@@ -43,6 +43,7 @@
   {
     /* background-color: rgb(202, 176, 147); */
     border: 2px solid black; 
+    
     width: 17em;
     height: 14.5em;
   

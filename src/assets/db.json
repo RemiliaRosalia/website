@@ -2,10 +2,41 @@
     "posts": 
     [
         {
+            "id": 10,
+            "url": "3DModels/2025",
+            "title": "3D Models 2025",
+            "icon": "https://github.com/RemiliaRosalia/website/blob/gh-pages/img/logo.1592727d.jpg?raw=true",
+            "desc": "A collection of every 3D model I made in 2025",
+            "tags":
+            [
+                "3D",
+                "Blender",
+                "Photoshop",
+                "Texturing",
+                "Solo"
+            ]
+        },
+            {
+            "id": 9,
+            "url": "SaveThePrincess",
+            "title": "Save The Princess",
+            "icon": "https://github.com/RemiliaRosalia/website/blob/gh-pages/img/logo.1592727d.jpg?raw=true",
+            "desc": "A short RPG I made for my partner.",
+            "tags":
+            [
+                "Game",
+                "Videogame",
+                "Game Design",
+                "JavaScript",
+                "Programming",
+                "Solo"
+            ]
+        },
+        {
             "id": 8,
             "url": "NibbleKnight",
             "title": "Nibble Knight",
-            "icon": "https://github.com/RemiliaRosalia/website/blob/gh-pages/img/logo.1592727d.jpg?raw=true",
+            "icon": "https://github.com/RemiliaRosalia/website/blob/gh-pages/img/nibbleKnight.6eace62f.png?raw=true",
             "desc": "Grabbling Hooks in the Sewer!",
             "tags":
             [
@@ -19,7 +50,7 @@
         },
         {
             "id": 7,
-            "url": "MyWebsite",
+            "url": "My_Website",
             "title": "My Website",
             "icon": "https://github.com/RemiliaRosalia/website/blob/gh-pages/img/logo.1592727d.jpg?raw=true",
             "desc": "This site was all me!",
@@ -29,14 +60,15 @@
                 "JavaScript",
                 "CSS",
                 "GitHub",
-                "Programming"
+                "Programming",
+                "Solo"
             ]
         },
         {
             "id": 6,
-            "url": "3DModels2024",
+            "url": "3DModels/2024",
             "title": "3D Models 2024",
-            "icon": "https://github.com/RemiliaRosalia/website/blob/gh-pages/img/logo.1592727d.jpg?raw=true",
+            "icon": "https://i.imgur.com/m8zxtrG.png",
             "desc": "A collection of every 3D model I made in 2024",
             "tags":
             [
@@ -49,9 +81,9 @@
         },
         {
             "id": 5,
-            "url": "GiftOfPain",
+            "url": "Gift_Of_Pain",
             "title": "Gift of Pain",
-            "icon": "https://github.com/RemiliaRosalia/website/blob/gh-pages/img/GiftofPain.png?raw=true",
+            "icon": "https://raw.githubusercontent.com/RemiliaRosalia/website/gh-pages/img/GiftofPain.86671d61.png",
             "desc": "This ex-wrestler Santa has had enough!",
             "tags":
             [
@@ -64,14 +96,15 @@
                 "C#",
                 "Animation",
                 "Rigging",
-                "Texturing"
+                "Texturing",
+                "Team"
             ]
         },
         {
             "id": 4, 
-            "url": "JourneysAndJazzTheFruitsOfTheGods",
+            "url": "Journeys_and_Jazz_The_Fruits_of_the_Gods",
             "title": "Journeys and Jazz: The Fruits of the Gods",
-            "icon": "https://img.itch.zone/aW1nLzEyNTY5MjUzLnBuZw==/315x250%23c/4ev6mR.png",
+            "icon": "https://github.com/RemiliaRosalia/website/blob/gh-pages/img/JNJFotG.5cb790a4.png?raw=true",
             "desc": "The coolest RPG Maker game ever!",
             "tags":
             [
@@ -79,14 +112,15 @@
                 "Videogame",
                 "Game Design",
                 "JavaScript",
-                "Programming"
+                "Programming",
+                "Solo"
             ]
         },
         {
             "id": 3, 
-            "url": "MashnCloth",
+            "url": "Mash_nCloth",
             "title": "Maya MASH & nCloth Independent Study",
-            "icon": "https://img.itch.zone/aW1nLzEyNTY5MjUzLnBuZw==/315x250%23c/4ev6mR.png",
+            "icon": "https://github.com/RemiliaRosalia/website/blob/gh-pages/img/Hill5.f9c82b4d.png?raw=true",
             "desc": "A collection of projects",
             "tags":
             [
@@ -94,16 +128,17 @@
                 "Maya",
                 "MASH",
                 "nCloth",
-                "Simulation"
+                "Simulation",
+                "Solo"
             ]
         },
 
         {
             "id": 2, 
-            "url": "NergModel",
+            "url": "Nerg_Model",
             "title": "Nerg 3D Model",
-            "icon": "https://github.com/RemiliaRosalia/website/blob/gh-pages/img/Nerg.jpg?raw=true",
-            "desc": "Meet this little guy!",
+            "icon": "https://github.com/RemiliaRosalia/website/blob/main/dist/img/Nerg.393024ab.gif?raw=true",
+            "desc": "An orginal creature 3D model",
             "tags":
             [
                 "3D",
@@ -112,14 +147,15 @@
                 "Organic",
                 "Texturing",
                 "Rigging",
-                "Animation"
+                "Animation",
+                "Solo"
             ]
         },
         {
             "id": 1, 
-            "url": "RoyalFlush",
+            "url": "Royal_Flush",
             "title": "Royal Flush",
-            "icon": "https://github.com/RemiliaRosalia/website/blob/gh-pages/img/RoyalFlush.png?raw=true",
+            "icon": "https://github.com/RemiliaRosalia/website/blob/gh-pages/img/RoyalFlush.8db6e008.png?raw=true",
             "desc": "The Gambling RPG",
             "tags":
             [
@@ -128,7 +164,8 @@
                 "Game Design",
                 "Unity",
                 "C#",
-                "Programming"
+                "Programming",
+                "Team"
             ]
         }
     ]

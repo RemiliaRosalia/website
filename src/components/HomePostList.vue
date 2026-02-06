@@ -1,38 +1,36 @@
 <template>
     <div class="GameRow">
-        <h3>Games</h3>
+         <h3>Games</h3>
         <div class="HomePosts">
             <div v-for="post in posts" :key="post.id" >
-            <!--h3>{{ post.title }}</h3-->
                 <div v-if="searchTag('Game', post.id)">
                     <SmallSinglePost :post="post" />
                 </div>        
             </div>
         </div>
-
     </div>
+    
     <div class="ModelRow">
         <h3>3D Models & More</h3>
         <div class="HomePosts">
             <div v-for="post in posts" :key="post.id" >
-            <!--h3>{{ post.title }}</h3-->
                 <div v-if="searchTag('3D', post.id)">
                     <SmallSinglePost :post="post" />
                 </div>        
             </div>
         </div>
     </div>
-    <div class="ArtRow">
+    
+    <!-- <div class="ArtRow">
         <h3>Art(TEMP JAVASCRIPT)</h3>
         <div class="HomePosts">
             <div v-for="post in posts" :key="post.id" >
-            <!--h3>{{ post.title }}</h3-->
                 <div v-if="searchTag('JavaScript', post.id)">
                     <SmallSinglePost :post="post" />
                 </div>        
             </div>
         </div>
-    </div>
+    </div>  -->
 </template>
 
 <script>
@@ -69,7 +67,6 @@ export default {
   .HomePosts
   {
     text-align: center;
-    border: 2px solid black; 
     display:flex;
     flex-wrap: wrap;
     margin-left: 2.5%;
@@ -79,6 +76,23 @@ export default {
   {
     margin-bottom: .25em;
   }
-
+  @media (max-width:768px)
+  {
+    .HomePosts
+  {
+    text-align: center;
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    align-items: center;
+    justify-content: center;
+  }
+  h3
+  {
+    margin-bottom: .25em;
+    text-align: center;
+  }
+  }
 
 </style>

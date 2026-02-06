@@ -1,11 +1,11 @@
 <template>
   <div class="about">
     <h1>Who am I?</h1>
-    <div class="container">
-      <div class="row">
-        <div class="AboutLeft col"><img src="../assets/CircleCropMe.png" width=80%></div>
+    <div class="AboutContainer">
+      <div class="AboutRow">
+        <div class="AboutLeft AboutCol"><img src="../assets/CircleCropMe.png" width=80%></div>
         
-        <div class="AboutRight col">
+        <div class="AboutRight AboutCol">
         <div></div>
           <p>
       My name is Remilia O'Connell and I am a programmer and 3D modeler with a passion for games.
@@ -32,10 +32,8 @@
         </div>
       </div> 
     </div>
-
-  </div>
-  <div class="container">
-      <div class="row justify-content-center m-4">
+  <div class="AboutContainer">
+      <div class="AboutRow justify-content-center m-4">
         <div class="col-md-5">
           <div class="text-center">
             <h4> Primary Skills </h4>
@@ -95,7 +93,7 @@
             <h4> Secondary Skills </h4>
 
             <figure class="figure m-3">
-              <img src="https://www.vectorlogo.zone/logos/java/java-icon.svg" alt="java" width="40" height="40"> 
+              <img src="https://skillicons.dev/icons?i=java&theme=light" alt="java" width="40" height="40"> 
               <figcaption class="figure-caption">Java</figcaption>
             </figure>
             
@@ -148,8 +146,18 @@
         </div>
       </div>
     </div>
+  </div>
 </template>
+
 <style>
+h1
+{
+  margin-bottom:0%;
+}
+.about
+{
+  padding-bottom: 5em;
+}
 .AboutRight p
 {
   /* float:Right; */
@@ -161,6 +169,7 @@
 
   margin: auto;
   margin-left: 1rem;
+
 }
 .AboutLeft
 {
@@ -171,23 +180,24 @@
   margin-right: 1rem;
 
 }
-.col
+.AboutCol
 {
   flex: 0 0 40%;
   max-width: 40%;
 }
-.container
+.AboutContainer
 {
   width: 100%;
   max-width: 1140px;
   margin:auto;
 
+  margin-bottom:-1.5em;
+  
 }
-.row
+.AboutRow
 {
   display: flex;
   flex-wrap: wrap;
-
   width:100%
 }
 .col-md-5 
@@ -208,12 +218,32 @@
 }
 .figure-caption 
 {
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 550;
   text-align:center;
 }
 .text-center
 {
   text-align: center;
+  padding-top:-10em
 }
 
+@media (max-width:768px)
+{
+  .AboutRight p
+{
+  text-align: center;
+  line-height: 1.33;
+}
+.AboutContainer
+{
+  margin-bottom:0em;
+}
+.AboutCol
+{
+  flex: 0 0 90%;
+  max-width: 90%;
+}
+
+}
 </style>

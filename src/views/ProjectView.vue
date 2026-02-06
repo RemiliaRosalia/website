@@ -18,6 +18,10 @@ export default
         loadFeat();
 
         return { postFeat, errorFeat};
+    },
+    mounted () 
+    {
+      window.scrollTo(0, 0)
     }
 }
 </script>

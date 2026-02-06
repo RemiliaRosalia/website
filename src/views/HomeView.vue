@@ -1,17 +1,33 @@
 <template>
 
-  <div class="home">
+<div class="home">
     <!--div v-if="errorFeat"> {{ errorFeat }} </div-->
-    <div class="featured" v-if="postFeat">
-      <img src='../assets/JNJFotG.png' width="33%" class="featuredImg">
-      <div class="featuredText">
-        <h1>{{ postFeat.title }}</h1>
-        <h2>
-        Part 3 Released!
-        </h2>
-        <h3>Part 3 of Journeys and Jazz: The Fruits of the Gods has been released for free on itch.io!</h3>
-        <p>{{ postFeat.desc }}</p>
+    <div class="featuredBorder container">
+      <router-link to="/project/Journeys_and_Jazz_The_Fruits_of_the_Gods" class="noHoverColor">
+        <div class="featured row" v-if="postFeat">
+          <transition>
+            <img src="..\assets\JNJFotG.png" class="featuredImg leftCol">
+          </transition>
+      <div class="featuredText col">
+          <h1 class= featuredTitle><u>{{ postFeat.title }}</u></h1>
+          <h2 class="featuredTitle">
+            <u>Part 3 Released!</u>
+          </h2>
+          <div class="featuredSmallImg" @mouseleave="changeFeatImg('https://github.com/RemiliaRosalia/website/blob/main/dist/img/JNJFotG.5cb790a4.png?raw=true')">
+            <img src="../assets/JNJ/Colosseum.png" width="25%" @mouseover="changeFeatImg('https://raw.githubusercontent.com/RemiliaRosalia/website/refs/heads/main/dist/img/Colosseum.38b73c1f.png')" >
+            <img src="../assets/JNJ/DataKuzgar.png" width="25%" @mouseover="changeFeatImg('https://raw.githubusercontent.com/RemiliaRosalia/website/refs/heads/main/dist/img/DataKuzgar.8b8f3a82.png')">
+            <img src="../assets/JNJ/OldMan.png" width="25%" @mouseover="changeFeatImg('https://github.com/RemiliaRosalia/website/blob/gh-pages/img/OldMan.873f7bfe.png?raw=true')">
+          </div>
+
+            <p>This new update to Journeys and Jazz: The Fruits of the Gods
+          adds the city of Alicia and around 2-3 hours of content
+          Play and explore what Alicia has to offer such as fighting in the colloseum and entering hot dog eating contests!
+            </p>
+
+                <!-- <u>Click here to learn more!</u>  -->
       </div>
+    </div>
+      </router-link>
     </div>
 
     <div>
@@ -28,14 +44,9 @@
 </template>
 
 <script>
-  import PostList from'../components/PostList.vue'
   import HomePostList from'../components/HomePostList.vue'
-  //automatically knows its a js file
-  import getPosts from '../composables/getPosts'
-  import getPost from '../composables/getPost'
   import postData from '../assets/db.json'
-
-
+  import VueScreen from 'vue-screen'
 export default 
 {
   name: 'HomeView',
@@ -43,97 +54,211 @@ export default
   props: ['id'],
   setup() 
     {
-      //runs first
-      // const{ postFeat, errorFeat, loadFeat} = getPost(1);
-      // loadFeat()
-      // const { posts, error, load} = getPosts()
-      // load()
-
-      // return {posts, error, postFeat, errorFeat}
       const posts = postData.posts
-      const postFeat = posts[2]
-      return{posts, postFeat}
+      //var featuredImg = "https://github.com/RemiliaRosalia/website/blob/gh-pages/img/JNJFotG.5cb790a4.png?raw=true"
+      const postFeat = posts[4]
+      const changeFeatImg = (newImg) =>
+        {
+          var image = document.getElementsByClassName("featuredImg")[0]
+          console.log(image)
+          image.src = newImg;
+        }
+        
+      return{posts, postFeat, changeFeatImg, VueScreen}
+
     },
 }
 </script>
 
 <style>
+.home
+{
+  padding-bottom: 2.5em;
+}
 .featured
 {
-  background-color: aqua;
-  width: 60%;
+  /* background-color: #609de9; */
+  background-color: #6baeff;
+  border: .25em solid #ffee00;
+  /* border-style:  groove  ridge ridge groove ; */
   align-self: center;
-  margin: 0 auto;
+  height:27.5em;
+}
 
+.featuredBorder
+{
+  /* width: 100%; */
+  margin: auto;
+  margin-top: 2em;
+  border: .25em solid #ffa946;
+  
+ 
 }
 .featuredImg
 {
+  object-fit:contain;
+  /* object-position: center; */
+  /* vertical-align:top; */
+  /* display: inline-block; */
+  height: 25em;
+  margin:auto;
+  /* margin:auto; */
 
-  vertical-align: top;
-  display: inline-block;
+}
+.featuredSmallImg
+{
+  text-align: center;
+  margin-top:.5em;
+  margin-bottom:.5em;
+}
+.featuredSmallImg img
+{
+  margin-left:2.5%;
+  opacity:70%;
+  margin-right:2.5%;
+  -webkit-transition: all .4s ease;
+       -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+         -o-transition: all .4s ease;
+            transition: all .4s ease;
+}
+
+.featuredSmallImg img:hover
+{
+opacity: 100%;
 }
 .featuredText
 {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   display: inline-block;
-  margin-left: 1%;
-  width:66%
+  margin:auto;
+  width:66%;
 }
-.Rows  
+.featured h1 
 {
-  
+  margin: auto auto .25em auto;
+  line-height: 125%;
 }
-.GameRow
+.featuredText h2
 {
-  background-color: aquamarine;
+  text-align: center;
+  margin:0em auto 1.25em auto;
 
 }
-.ModelRow
+.featuredText p
 {
-  background-color: lavender;
-
-
+  margin-top:.5em;
+  margin-left:10%;
+  margin-right:10%;
+  font-size: large;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
 }
-.ArtRow
+.featuredTitle
 {
-  background-color:aliceblue;
-
+  /* text-align: center; */
+  margin-top:0%;
+  padding-top:0%;
 }
+
 h3
 {
   margin-left: 2%;
 }
 .Container
 {
- /* We first create a flex layout context */
- display: flex;
-  
-  /* Then we define the flow direction 
-     and if we allow the items to wrap 
-   * Remember this is the same as:
-   * flex-direction: row;
-   * flex-wrap: wrap;
-   */
+  display: flex;
   flex-flow: row wrap;
-  
-  /* Then we define how is distributed the remaining space */
   justify-content: space-around;
-  
   padding: 0;
   margin: 0;
   list-style: none;
 }
-.item
+.leftCol
 {
-  background: tomato;
-  padding: 5px;
-  width: 200px;
-  height: 150px;
-  margin-top: 10px;
-  line-height: 150px;
-  color: white;
-  font-weight: bold;
-  font-size: 3em;
+  flex: 0 0 35%;
+  max-width: 35%;
+}
+
+@media (max-width:900px)
+{
+  .featured
+{
   text-align: center;
+}
+
+.featuredImg
+{
+  object-fit:contain;
+  height: 25em;
+  margin:auto;
+
+}
+.featuredSmallImg
+{
+  text-align: center;
+  margin-top:.5em;
+  margin-bottom:.5em;
+}
+.featuredSmallImg img
+{
+  margin-left:2.5%;
+  opacity:70%;
+  margin-right:2.5%;
+  -webkit-transition: all .4s ease;
+       -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+         -o-transition: all .4s ease;
+            transition: all .4s ease;
+}
+
+.featuredSmallImg img:hover
+{
+opacity: 100%;
+}
+.featuredText
+{
+  /* background-color: aquamarine; */
+  display: inline-block;
+  margin:auto;
+}
+.featured h1 
+{
+  font-size:x-large;
+}
+.featuredText h2
+{
+  font-size:larger;
+}
+.featuredText p
+{
+  margin-left:0%;
+  margin-right:0%;
+  font-size: medium;
+}
+.container
+{
+  max-width: 75%;
+}
+}
+
+@media (max-width:1250px)
+{
+
+.featuredText p
+{
+  margin-left:0%;
+  margin-right:0%;
+  font-size: medium;
+}
+  .container
+{
+  max-width: 80%;
+}
+.HomePosts
+  {
+    justify-content: center;
+  }
 }
 </style>
