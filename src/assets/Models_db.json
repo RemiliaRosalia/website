@@ -5,7 +5,7 @@
         {
             "id": 54,
             "title": "Katana",
-            "icon": "https://i.imgur.com/0030tMQ.png",
+            "icon": "https://i.imgur.com/fsaN6JK.png",
             "tags":
             [
                 "2025", "Prop", "Hard Surface", "Textured", "Model"
@@ -14,7 +14,7 @@
         {
             "id": 53,
             "title": "Ring of Looting",
-            "icon": "https://i.imgur.com/KpTXavy.png",
+            "icon": "https://i.imgur.com/axBEXQC.png",
             "tags":
             [
                 "2025", "Prop", "Hard Surface", "Textured", "Model"
@@ -23,7 +23,7 @@
         {
             "id": 52,
             "title": "Guard Helm",
-            "icon": "",
+            "icon": "https://i.imgur.com/wjj5vY9.png",
             "tags":
             [
                 "2025", "Prop", "Hard Surface", "Model", "Unfinished"
@@ -32,7 +32,7 @@
         {
             "id": 51,
             "title": "Small Mushroom",
-            "icon": "https://i.imgur.com/4rQGKYZ.png",
+            "icon": "https://i.imgur.com/Mf3rAS9.png",
             "tags":
             [
                 "2025", "Prop", "Hard Surface", "Textured", "Model", "Procedural Material"
@@ -41,7 +41,7 @@
         {
             "id": 50,
             "title": "Mushroom",
-            "icon": "https://i.imgur.com/6znHwAE.png",
+            "icon": "https://i.imgur.com/lHQf2Yv.png",
             "tags":
             [
                 "2025", "Prop", "Hard Surface", "Textured", "Model", "Procedural Material"
@@ -59,7 +59,7 @@
         {
             "id": 48,
             "title": "Rubber Boots",
-            "icon": "https://i.imgur.com/V3RFNnD.png",
+            "icon": "https://i.imgur.com/fq3lRIi.png",
             "tags":
             [
                 "2025", "Prop", "Hard Surface", "Textured", "Model", "Procedural Material"
@@ -67,8 +67,8 @@
         },
         {
             "id": 47,
-            "title": "Tabletop 3 Guage",
-            "icon": "",
+            "title": "Tabletop Guage",
+            "icon": "https://i.imgur.com/B3wVeOi.png",
             "tags":
             [
                 "2025", "Prop", "Hard Surface", "Textured", "Model"
@@ -77,7 +77,7 @@
         {
             "id": 46,
             "title": "Tabletop Danger Guage",
-            "icon": "",
+            "icon": "https://i.imgur.com/tUeT6Dr.png",
             "tags":
             [
                 "2025", "Prop", "Hard Surface", "Textured", "Model"
