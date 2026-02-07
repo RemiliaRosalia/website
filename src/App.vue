@@ -70,6 +70,10 @@ nav
   padding-bottom: 0px;
   font-size: larger;
 }
+a
+{
+  color:#182735
+}
 a:visited
 {
   color:#182735
