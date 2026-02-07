@@ -10,7 +10,7 @@ Your browser does not support the video tag.
     </div>
     <div>
       <p>
-          This is a collection of exercises I worked on over a semester for an independents study. There are 3 sections for Mash, nCloth, and my prgress towards the final project.
+          This is a collection of exercises I worked on over a semester for an independent study. There are 3 sections for Mash, nCloth, and my prgress towards the final project.
       </p>
       <p>
         Mash:

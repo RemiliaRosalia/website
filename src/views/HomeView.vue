@@ -9,7 +9,7 @@
             <img src="..\assets\JNJFotG.png" class="featuredImg leftCol">
           </transition>
       <div class="featuredText col">
-          <h1 class= featuredTitle><u>{{ postFeat.title }}</u></h1>
+          <h1 class= featuredTitle><u>{{ "Journeys and Jazz: The Fruits of the Gods" }}</u></h1>
           <h2 class="featuredTitle">
             <u>Part 3 Released!</u>
           </h2>
@@ -20,7 +20,7 @@
           </div>
 
             <p>This new update to Journeys and Jazz: The Fruits of the Gods
-          adds the city of Alicia and around 2-3 hours of content
+          adds the city of Alicia and around 2-3 hours of content.
           Play and explore what Alicia has to offer such as fighting in the colloseum and entering hot dog eating contests!
             </p>
 

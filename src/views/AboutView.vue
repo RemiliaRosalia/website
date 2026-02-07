@@ -24,10 +24,9 @@
           </p>
     
           <p>
-      Currently I am working on a passion project of continueing my Senior Thesis,
+      Currently I am working on a passion project of continuing my Senior Thesis,
       Journeys and Jazz: The Fruits of the Gods.
-      I also am working with some fellow graduates on a Unity project whether
-      I am in charge of creating most of our assets with Blender.
+      I also am working on improving my various skills while I work part time at Walmart.
           </p>
         </div>
       </div> 
