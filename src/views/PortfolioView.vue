@@ -1,4 +1,5 @@
 <template>
+  <title>TEST</title>
     <div class="Portfolio">
       <div class="List">
         <!--div v-if ="error"> {{ error }}</div-->

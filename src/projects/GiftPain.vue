@@ -1,4 +1,5 @@
 <template>
+  <title>Gift of Pain</title>
   <div class="projectPage">
     <!-- <h1>Gift of Pain</h1> -->
     <div class="projectIMG">

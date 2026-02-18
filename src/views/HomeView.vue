@@ -1,5 +1,5 @@
 <template>
-
+<!-- <title>{{TabTitle}}</title> -->
 <div class="home">
     <!--div v-if="errorFeat"> {{ errorFeat }} </div-->
     <div class="featuredBorder container">
@@ -47,6 +47,7 @@
   import HomePostList from'../components/HomePostList.vue'
   import postData from '../assets/db.json'
   import VueScreen from 'vue-screen'
+  import TabTitle from '../App.vue'
 export default 
 {
   name: 'HomeView',
@@ -57,14 +58,14 @@ export default
       const posts = postData.posts
       //var featuredImg = "https://github.com/RemiliaRosalia/website/blob/gh-pages/img/JNJFotG.5cb790a4.png?raw=true"
       const postFeat = posts[4]
+      TabTitle = "Remi"
       const changeFeatImg = (newImg) =>
         {
           var image = document.getElementsByClassName("featuredImg")[0]
           console.log(image)
           image.src = newImg;
         }
-        
-      return{posts, postFeat, changeFeatImg, VueScreen}
+      return{posts, postFeat, changeFeatImg, VueScreen, TabTitle}
 
     },
 }

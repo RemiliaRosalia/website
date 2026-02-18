@@ -1,5 +1,6 @@
 <template>
   <div class="projectPage">
+    <h1>The Nerg</h1>
     <!-- <h1>Gift of Pain</h1> -->
     <div class="projectIMG">
       <iframe width="500em" height="300em" src="https://www.youtube.com/embed/6sDaTABuIlU"> </iframe> 

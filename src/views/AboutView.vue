@@ -1,4 +1,5 @@
 <template>
+  <title>About</title>
   <div class="about">
     <h1>Who am I?</h1>
     <div class="AboutContainer">

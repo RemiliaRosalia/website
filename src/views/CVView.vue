@@ -1,4 +1,5 @@
 <template>
+  <title>CV</title>
     <div class="CV">
       <div>
         <h1>Work Experience</h1>
@@ -92,9 +93,10 @@ h1
   text-align: center;
   
 }
-h2
+.CV h2
 {
-  margin-left: 15%;
+  margin-left: 12.5%;
+  text-align: left;
 }
 h4
 {
@@ -112,7 +114,7 @@ p
 }
 @media (max-width:900px)
 {
-  h2
+  .CV h2
   {
     text-align: center;
     margin:5% auto -1% auto;

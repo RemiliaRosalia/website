@@ -1,4 +1,5 @@
 <template>
+  <title>RemiliaRosalia</title>
   <head>
     <link rel="icon" href="./assets/RemiliaRosaliaIcon_256.png">
   </head>
@@ -30,7 +31,10 @@
 
 export default
 {
+setup()
+  {
 
+  }
 }
 </script>
 
@@ -136,9 +140,14 @@ nav a.router-link-exact-active {
 }
 .projectPage h2
 {
-  margin-left: 10%;
-  margin-top:0%;
-  font-size:large;
+  font-size:larger;
+}
+.CV h2
+{
+  margin-left: 5%;
+  margin-top:1.5em;
+  margin-bottom: -.5em;
+  font-size:larger;
 }
 h5
 {

@@ -1,4 +1,5 @@
 <template>
+
   <div v-if="errorFeat"> {{ errorFeat }} </div>
   <div v-if="postFeat" class="post">
     <h3> {{ postFeat.title }}</h3>

@@ -1,4 +1,5 @@
 <template>
+  <title>3D Models</title>
     <div class="projectPage">
     <div class="List">
         <!--div v-if ="error"> {{ error }}</div-->
