@@ -1,7 +1,8 @@
 <template>
-  <title>RemiliaRosalia</title>
+
   <head>
-    <link rel="icon" href="./assets/RemiliaRosaliaIcon_256.png">
+      <title>RemiliaRosalia</title>
+      
   </head>
 
   <body>
