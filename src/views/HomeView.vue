@@ -90,10 +90,9 @@ export default
 {
   /* width: 100%; */
   margin: auto;
+  width:50%;
   margin-top: 2em;
   border: .25em solid #ffa946;
-  
- 
 }
 .featuredImg
 {
@@ -244,7 +243,7 @@ opacity: 100%;
 }
 }
 
-@media (max-width:1250px)
+@media (max-aspect-ratio:1/1)
 {
 
 .featuredText p
@@ -253,13 +252,50 @@ opacity: 100%;
   margin-right:0%;
   font-size: medium;
 }
+.featuredBorder
+{
+  /* width: 100%; */
+  width:100%;
+}
   .container
 {
   max-width: 80%;
 }
-.HomePosts
-  {
+
+}
+@media (max-aspect-ratio: 5/4)
+{
+  .featuredBorder
+{
+  /* width: 100%; */
+  width:75%;
+}
+  .HomePosts
+{
     justify-content: center;
+}
+}
+@media (max-width: 900px)
+{
+  .featuredBorder
+  {
+    width: 100%
   }
+  .featuredText p
+{
+  margin-top:0em;
+  margin-left:0%;
+  margin-right:0%;
+  font-size: medium;
+  line-height: 1.25em;
+}
+.featured h1 
+{
+  font-size:larger;
+}
+.featuredText h2
+{
+  font-size:large;
+}
 }
 </style>

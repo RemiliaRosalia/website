@@ -212,6 +212,10 @@ h5
   {
     margin-bottom: -.5em;
   }
+  .navLinks
+  {
+    font-size:medium
+  }
   
 }
 </style>

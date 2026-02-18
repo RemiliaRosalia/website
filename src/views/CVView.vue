@@ -4,7 +4,7 @@
       <div>
         <h1>Work Experience</h1>
         <div>
-          <h2>Digital Personal Shopper | Walmart | 11/2024 – Present</h2>
+          <h2 class="skills">Digital Personal Shopper | Walmart | 11/2024 – Present</h2>
           <div class="bullets">
           <p>● Pick, Stage, and Dispense customers’ orders.</p>
           <p>● Stay in constant communication with coworkers on where help was needed most.</p>
@@ -90,17 +90,21 @@
 }
 h1
 {
+  margin-top: 1em;
+  margin-bottom:-.25em;
   text-align: center;
   
 }
 .CV h2
 {
-  margin-left: 12.5%;
+  margin-left: 10.5%;
   text-align: left;
+
 }
 h4
 {
-  margin-left: 2%;
+  margin-left: 3%;
+  text-align: left;
 }
 p
 {
@@ -118,6 +122,7 @@ p
   {
     text-align: center;
     margin:5% auto -1% auto;
+
   }
   .bullets
 {
