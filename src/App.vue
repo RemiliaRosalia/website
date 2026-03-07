@@ -154,6 +154,10 @@ h5
 {
   margin-top: 0%;
 }
+.caption h5
+  {
+    color:rgb(73, 73, 73)
+  }
 .projectIMG
 {
   text-align: center;
@@ -166,7 +170,8 @@ h5
     flex-wrap: wrap; */
     justify-content: center;
     width:90%;
-    margin:auto
+    margin:auto;
+    color: rgb(65, 65, 65)
   }
 
   .projectImages img

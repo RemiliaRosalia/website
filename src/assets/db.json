@@ -2,7 +2,7 @@
     "posts": 
     [
         {
-            "id": 10,
+            "id": 9,
             "url": "3DModels/2025",
             "title": "3D Models 2025",
             "icon": "https://i.imgur.com/fsaN6JK.png",
@@ -20,7 +20,7 @@
             "id": 9,
             "url": "SaveThePrincess",
             "title": "Save The Princess",
-            "icon": "https://github.com/RemiliaRosalia/website/blob/gh-pages/img/logo.1592727d.jpg?raw=true",
+            "icon": "https://i.imgur.com/oTz5PU6.png",
             "desc": "A short RPG I made for my partner.",
             "tags":
             [
