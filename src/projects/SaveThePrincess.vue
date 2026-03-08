@@ -24,7 +24,7 @@
             <img src="../assets/SaveThePrincess/Malachite.png">
       </div>
       <p>
-        One of the main aspects I wanted to experiement with was balancing around only a single character who can change classes.
+        The main aspect I experimented with was balancing around only a single character who can change classes.
         Save the Princess features 6 classes, 2 of which being rarer.
         The classes are:
       </p>
@@ -43,7 +43,7 @@
             <img src="../assets/SaveThePrincess/Loot.gif">
       </div>
       <p>
-        Rather than gaining an enemy's items after combat, they instead give 'loot' items that when used, give a random item from a selection based on the enemy it belongs to, not unlike a gacha game system.
+        Rather than gaining an enemy's items after combat, they instead give 'loot'. When used, they give a random item from a selection based on the enemy it belongs to, not unlike a gacha game system.
         These items range from armors and weapons to small permanent stat increases. I decided to try this out as not only does my partner like gacha systems, it also meant I was not limited to RPG Makers 3 possible drops per enemy limitation.
       </p>
       <h2>Weapon Buffs</h2>
@@ -84,7 +84,7 @@
         While standard enemies do not scale, the boss of each trial does get stronger based on how many trials have been completed.
         
       </p>
-      <h4>The Knight Trail</h4>
+      <h4>The Knight Trial</h4>
       <div class="projectImages">
             <img src="../assets/SaveThePrincess/SupportSeal.png">
       </div>
@@ -93,7 +93,7 @@
         Once all four fights have been won, the player then fights against the boss and passes the trial.
       </p>
 
-      <h4>The Mage Trail</h4>
+      <h4>The Mage Trial</h4>
       <div class="projectImages">
             <img src="../assets/SaveThePrincess/MageTrial.gif">
             <img src="../assets/SaveThePrincess/MageRoom2.png">
@@ -105,7 +105,7 @@
         Once the player completes both rooms, they then can face the boss.
       </p>
       
-      <h4>The Cleric Trail</h4>
+      <h4>The Cleric Trial</h4>
       <div class="projectImages">
             <img src="../assets/SaveThePrincess/NallynQuest.png">
             <img src="../assets/SaveThePrincess/PotionSellerFight.png">
@@ -117,7 +117,7 @@
         Once the player talks to 5 npcs in the right order, they are able to battle the boss of the area.
       </p>
       
-      <h4>The Rogue Trail</h4>
+      <h4>The Rogue Trial</h4>
       <div class="projectImages">
             <img src="../assets/SaveThePrincess/rogue1.png">
             <img src="../assets/SaveThePrincess/Rogue2.png">
@@ -131,7 +131,7 @@
       <p>
         After completting the four trials, the player can access two optional bosses at the areas entrance along with being able to continue to the final trial.
       </p>
-      <h4>The Final Trail</h4>
+      <h4>The Final Trial</h4>
       <div class="projectImages">
             <img src="../assets/SaveThePrincess/FinalTrial.png">
       </div>

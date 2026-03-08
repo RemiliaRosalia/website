@@ -28,5 +28,10 @@ export default
 </script>
 
 <style>
-
+.projectLink
+{
+  color:blueviolet;
+  margin:0%;
+  
+}
 </style>
