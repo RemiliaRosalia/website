@@ -177,8 +177,9 @@ h5
   .projectImages img
   {
     margin:.25em;
-    height: 17.5em;
+    height: 20em;
   }
+  
   .longImg
   {
     text-align: center;
@@ -210,7 +211,22 @@ h5
   flex-wrap: wrap;
   /* width:100% */
 }
-
+@media (max-aspect-ratio: 1.25/1)
+{
+  .projectPage
+{
+  margin-top:1em;
+  margin-left: 0%;
+  margin-right: 0%;
+  /* background-color: antiquewhite; */
+  padding-bottom:3em;
+}
+  .projectImages img
+  {
+    margin:.25em;
+    height: 17.5em;
+  }
+}
 @media (max-width:900px)
 {
   .logo

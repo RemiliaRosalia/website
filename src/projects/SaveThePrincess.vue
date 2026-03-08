@@ -15,7 +15,7 @@
       </p>
 
       <h2>Classes</h2>
-      <div class="projectImages">
+      <div class="princessClasses">
             <img src="../assets/SaveThePrincess/Knight.png">
             <img src="../assets/SaveThePrincess/Mage.png">
             <img src="../assets/SaveThePrincess/Cleric.png">
@@ -23,6 +23,7 @@
             <img src="../assets/SaveThePrincess/GodSlayer.png">
             <img src="../assets/SaveThePrincess/Malachite.png">
       </div>
+      
       <p>
         The main aspect I experimented with was balancing around only a single character who can change classes.
         Save the Princess features 6 classes, 2 of which being rarer.
@@ -220,6 +221,24 @@
     text-align: center;
     /* margin-right: 30%; */
   }
+  .princessClasses
+  {
+        text-align: center;
+    /* border: 2px solid black;  */
+    /* display:flex;
+    flex-wrap: wrap; */
+      justify-content: center;
+      width:90%;
+      margin:auto;
+      color: rgb(65, 65, 65);
+
+  }
+    .princessClasses img
+  {
+      margin:.25em;
+      height: 17.5em;
+  }
+
 
 </style>
   

@@ -185,6 +185,36 @@ h1
     font-size:small;
   } */
   
+  @media (max-aspect-ratio: 1.25/1)
+  {
+    .postList
+    {
+      margin-left: 5%;
+      margin-right:5%;
+    }
+  }
+  @media (max-aspect-ratio: 1/1)
+  {
+    .postList
+    {
+      margin-left: 10%;
+      margin-right:10%;
+    }
+  }
+    @media (max-aspect-ratio: .7/1)
+  {
+    .postList
+    {
+      margin-left: 0%;
+      margin-right:0%;
+    }
+      .ModelPost:hover
+  {
+    width:25em;
+    height:25em;
+    vertical-align: middle;
+  }
+  }
   @media (max-width:768px)
 {
   .tagArea button
@@ -196,5 +226,10 @@ h1
     /* font-weight: 500; */
     text-decoration: underline;
   }
+      .postList
+    {
+      margin-left: 10%;
+      margin-right:10%;
+    }
 }
 </style>
