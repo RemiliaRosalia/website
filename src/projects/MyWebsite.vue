@@ -11,7 +11,7 @@
         It runs off of Vue.JS, giving me opportunities to utilize my JavaScript knowledge.
       </p>
       <h2>The Home Page</h2>
-      <div class="projectImages">
+      <div class="projectImages largerImages">
             <img src="../assets/WebsiteProject/Home.png">
       </div>
       <p>
@@ -19,21 +19,21 @@
         The large post is there for me to show off recent news and projects that I am especially proud of.
       </p>
       <h2>The Portfolio Page</h2>
-      <div class="projectImages">
+      <div class="projectImages largerImages">
             <img src="../assets/WebsiteProject/Home.png">
       </div>
       <p>
         Similiar to the Home page, the Portfolio page shows off my various projects. However, this one shows off all of them in a easy to read grid along with having toggleable tags to only show specific types of projects.
       </p>
       <h2>The CV Page</h2>
-      <div class="projectImages">
+      <div class="projectImages largerImages">
             <img src="../assets/WebsiteProject/CV.png">
       </div>
       <p>
         This page serves as a CV, detailing my experience, both with work and personal projects.
       </p>
       <h2>The About Page</h2>
-      <div class="projectImages">
+      <div class="projectImages largerImages">
             <img src="../assets/WebsiteProject/About.png">
       </div>
       <p>
@@ -57,6 +57,11 @@
   {
     text-align: center;
     
+  }
+  .largerImages img
+  {
+    margin:.25em;
+    height: 25em;
   }
 </style>
   

@@ -238,7 +238,15 @@
       margin:.25em;
       height: 17.5em;
   }
-
+@media (max-aspect-ratio: 9/16)
+    {
+    .princessClasses img
+      {
+      margin:0em;
+      height:auto;
+      width:45%;
+      }
+    }
 
 </style>
   

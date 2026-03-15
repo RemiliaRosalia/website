@@ -197,8 +197,8 @@ h1
   {
     .postList
     {
-      margin-left: 10%;
-      margin-right:10%;
+      margin-left: 7.5%;
+      margin-right:7.5%;
     }
   }
     @media (max-aspect-ratio: .7/1)

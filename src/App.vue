@@ -226,6 +226,42 @@ h5
     margin:.25em;
     height: 17.5em;
   }
+    .longImg img
+    {
+      width:90%;
+      height: auto;
+      margin:.25em;
+    }
+
+    @media (max-aspect-ratio: 9/16)
+    {
+      .projectIMG img
+      {
+        height:auto;
+        width: 95%;
+      }
+        .projectImages img
+      {
+        margin:0em;
+        width:100%;
+        height: auto;
+      }
+      p
+      {
+        margin:0%;
+      }
+      .projectPage p
+      {
+          margin-left: 5%;
+          margin-right: 5%;
+      }
+      .projectPage h5
+      {
+          margin-left: 5%;
+          margin-right: 5%;
+      }
+    }
+
 }
 @media (max-width:900px)
 {

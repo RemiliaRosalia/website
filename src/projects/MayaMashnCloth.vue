@@ -12,9 +12,9 @@ Your browser does not support the video tag.
       <p>
           This is a collection of exercises I worked on over a semester for an independent study. There are 3 sections for Mash, nCloth, and my prgress towards the final project.
       </p>
-      <p>
+      <h2>
         Mash:
-      </p>
+      </h2>
       </div>
       <div class="projectImages">
         <img src="../assets/MashnCloth/Physics.gif">
@@ -27,7 +27,7 @@ Your browser does not support the video tag.
         <img src="../assets/MashnCloth/Grass2.gif">
         <img src="../assets/MashnCloth/Grass3.gif">
       </div>
-      <p>nCloth:</p>
+      <h2>nCloth:</h2>
       <div class="projectImages">
         <img src="../assets/MashnCloth/cloth.gif">
         <img src="../assets/MashnCloth/Flag.gif">
@@ -38,7 +38,7 @@ Your browser does not support the video tag.
         <img src="../assets/MashnCloth/Grass4.gif">
         <img src="../assets/MashnCloth/Ball3.gif">
       </div>
-      <p>Final Project</p>
+      <h2>Final Project</h2>
       <div class="projectImages">
         <img src="../assets/MashnCloth/Grass5.gif">
         <img src="../assets/MashnCloth/Hill2.jpg">
