@@ -129,6 +129,12 @@ nav a.router-link-exact-active {
   /* background-color: antiquewhite; */
   padding-bottom:3em;
 }
+  .projectPage h4
+  {
+      text-align: center;
+      margin-left: 0%;
+      margin-right: 0%;
+  }
 .projectPage h1
 {
   margin-bottom:0%;
@@ -221,6 +227,7 @@ h5
   /* background-color: antiquewhite; */
   padding-bottom:3em;
 }
+
   .projectImages img
   {
     margin:.25em;
@@ -249,6 +256,7 @@ h5
       p
       {
         margin:0%;
+        
       }
       .projectPage p
       {

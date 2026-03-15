@@ -11,7 +11,7 @@
             It features the four characters of Leonard, Seleth, Dreck, and Tezca as they explore the modern fantasy world of Eclysia for the titular Fruits of the Gods.
             The story will take place over 6 parts with parts 1, 2 and 3 currently released.
           </p>
-          <p><a target="_blank" href="https://remiliarosalia.itch.io/jnj-fruits-of-the-gods">Play it for free on itch.io</a></p>
+          <h4><a target="_blank" href="https://remiliarosalia.itch.io/jnj-fruits-of-the-gods">Play it for free on itch.io</a></h4>
           </div>
           <div class="projectImages">
             <img src="../assets/JNJ/LeonardIntro.png">
