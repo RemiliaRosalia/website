@@ -2,7 +2,7 @@
 <!-- <title>{{TabTitle}}</title> -->
 <div class="home">
     <!--div v-if="errorFeat"> {{ errorFeat }} </div-->
-    <div class="featuredBorder container">
+    <div class="featuredBorder container noMobile" >
       <router-link to="/project/Journeys_and_Jazz_The_Fruits_of_the_Gods" class="noHoverColor">
         <div class="featured row" v-if="postFeat">
           <transition>
@@ -30,6 +30,30 @@
       </router-link>
     </div>
 
+    <div class="featuredBorder onlyMobile" >
+      <router-link to="/project/Journeys_and_Jazz_The_Fruits_of_the_Gods" class="noHoverColor">
+        <div class="featured " v-if="postFeat">
+          <div class="featuredText">
+            <h1 class= featuredTitle><u>{{ "Journeys and Jazz: The Fruits of the Gods" }}</u></h1>
+            <h2 class="featuredTitle">
+              <u>Part 3 Released!</u>
+            </h2>
+            <transition>
+              <img :src="mainImageSrc" class="featuredImg ">
+            </transition>
+            <p>This new update to Journeys and Jazz: The Fruits of the Gods
+          adds the city of Alicia and around 2-3 hours of content.
+          Play and explore what Alicia has to offer such as fighting in the colloseum and entering hot dog eating contests!
+            </p>
+
+                <!-- <u>Click here to learn more!</u>  -->
+          </div>
+        </div>
+      </router-link>
+    </div>
+
+
+
     <div>
       <!--div v-if ="error"> {{ error }}</div-->
       <div v-if="posts.length">
@@ -50,8 +74,14 @@
   import TabTitle from '../App.vue'
 export default 
 {
-  name: 'HomeView',
+  name: 'HomeView', 
   components: { HomePostList},
+   data () {
+    return {
+      images: [],
+      mainImageSrc: "https://github.com/RemiliaRosalia/website/blob/main/dist/img/JNJFotG.5cb790a4.png?raw=true"
+    }
+  },
   props: ['id'],
   setup() 
     {
@@ -68,14 +98,55 @@ export default
       return{posts, postFeat, changeFeatImg, VueScreen, TabTitle}
 
     },
+    methods:
+    {
+    },
+    created() 
+    {
+      let self= this
+      var i=1;
+      this.images = 
+      [
+        {
+          image: "https://github.com/RemiliaRosalia/website/blob/main/dist/img/JNJFotG.5cb790a4.png?raw=true"
+        },
+                
+        {
+          image: "https://raw.githubusercontent.com/RemiliaRosalia/website/refs/heads/main/dist/img/Colosseum.38b73c1f.png"
+        },        
+        {
+          image: "https://raw.githubusercontent.com/RemiliaRosalia/website/refs/heads/main/dist/img/DataKuzgar.8b8f3a82.png"
+        },        
+        {
+          image: "https://github.com/RemiliaRosalia/website/blob/gh-pages/img/OldMan.873f7bfe.png?raw=true"
+        },
+
+      ]
+      setInterval(function()
+    {
+
+              //self.mainImageSrc = self.images[Math.floor(Math.random()*self.images.length)].image;
+              self.mainImageSrc = self.images[i].image;
+              i++;
+              if(i>3)
+              {
+                i=0;
+              }
+    }, 5000);
+    }
 }
 </script>
 
 <style>
+.onlyMobile
+{
+  display:none
+}
 .home
 {
   padding-bottom: 2.5em;
 }
+
 .featured
 {
   /* background-color: #609de9; */
@@ -297,5 +368,47 @@ opacity: 100%;
 {
   font-size:large;
 }
+}
+@media (max-aspect-ratio: 9/16)
+{
+  .noMobile
+{
+  display:none;
+}
+.onlyMobile
+{
+  display:block;
+}
+  .featuredBorder
+  {
+    width:95%;
+  }
+  .featured
+{
+  height: auto;
+}
+.featuredText
+{
+  width:90%;
+}
+.featured h1
+{
+  margin-top: 5%;
+  font-size:x-large;
+}
+.featured h2
+{
+  margin-bottom:2.5%;
+}
+.featured p
+{
+  margin-bottom:5%;
+}
+
+  .featuredImg
+  {
+    width:100%;
+    height:15em;
+  }
 }
 </style>

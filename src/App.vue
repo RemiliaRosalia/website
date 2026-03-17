@@ -8,7 +8,7 @@
   <body>
     <nav class="header">
     <div class="logo">
-      <router-link to="/" ><img src='./assets/logo.jpg' width="200px"> </router-link>   
+      <router-link to="/" ><img src='./assets/logo.jpg' > </router-link>   
     </div>
     <div class="navLinks">
       <router-link to="/" class="navRight">Home</router-link>&emsp;&emsp;
@@ -106,7 +106,10 @@ a:hover
   padding-bottom: 0px;
   margin-bottom: -2em;
   padding-left: 30px;
-  
+}
+.logo img
+{
+  width: 200px;
 }
 nav a {
   font-weight: bold;
@@ -239,9 +242,17 @@ h5
       height: auto;
       margin:.25em;
     }
-
-    @media (max-aspect-ratio: 9/16)
+}
+@media (max-aspect-ratio: 9/16)
     {
+      .logo
+      {
+        padding-left: 15px;
+      }
+      .logo img
+      {
+        width: 150px;
+      }
       .projectIMG img
       {
         height:auto;
@@ -268,9 +279,11 @@ h5
           margin-left: 5%;
           margin-right: 5%;
       }
+      a
+      {
+        font-size: large;
+      }
     }
-
-}
 @media (max-width:900px)
 {
   .logo
