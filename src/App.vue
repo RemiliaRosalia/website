@@ -11,9 +11,9 @@
       <router-link to="/" ><img src='./assets/logo.jpg'  alt="Remilia Rosalia's logo"> </router-link>   
     </div>
     <div class="navLinks">
-      <router-link to="/" class="navRight">Home</router-link>&emsp;
-      <router-link to="/portfolio" class="navRight">Portfolio</router-link>&emsp;
-      <router-link to="/cv" class="navRight">CV</router-link> &emsp;
+      <router-link to="/" class="navRight">Home</router-link>
+      <router-link to="/portfolio" class="navRight">Portfolio</router-link>
+      <router-link to="/cv" class="navRight">CV</router-link>
       <router-link to="/about" class="navRight">About</router-link>
       </div>
   </nav>
