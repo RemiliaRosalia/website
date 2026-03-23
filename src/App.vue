@@ -1,4 +1,4 @@
-<template>
+<template lang="en-GB">
 
   <head>
       <title>RemiliaRosalia</title>
@@ -8,12 +8,12 @@
   <body>
     <nav class="header">
     <div class="logo">
-      <router-link to="/" ><img src='./assets/logo.jpg' > </router-link>   
+      <router-link to="/" ><img src='./assets/logo.jpg'  alt="Remilia Rosalia's logo"> </router-link>   
     </div>
     <div class="navLinks">
-      <router-link to="/" class="navRight">Home</router-link>&emsp;&emsp;
-      <router-link to="/portfolio" class="navRight">Portfolio</router-link>&emsp;&emsp;
-      <router-link to="/cv" class="navRight">CV</router-link>  &emsp;&emsp;
+      <router-link to="/" class="navRight">Home</router-link>&emsp;
+      <router-link to="/portfolio" class="navRight">Portfolio</router-link>&emsp;
+      <router-link to="/cv" class="navRight">CV</router-link> &emsp;
       <router-link to="/about" class="navRight">About</router-link>
       </div>
   </nav>
@@ -69,6 +69,7 @@ h1
   text-align: center;
   margin: 0%;
   width: 100%;
+  height: 95px;
   background-color:#afcdff;
 }
 .about
@@ -104,6 +105,11 @@ a:hover
   width: 100%;
   /* border-bottom: 6px solid #0072ff; */
 }
+.navLinks a
+{
+padding-left: 25px;
+padding-right: 25px;
+}
 
 .logo
 {
@@ -119,7 +125,7 @@ a:hover
   width: 200px;
 }
 nav a {
-  font-weight: bold;
+  font-weight: bolder;
   color: #2c3e50;
 }
 body
@@ -127,9 +133,16 @@ body
   width: 100%;
   margin: 0%;
 }
-nav a.router-link-exact-active {
+.navLinks a.router-link-exact-active {
   /* color: #ff8800; */
-  color:#ee7700;
+  color:#ff8800;
+  font-weight:1000;
+  -webkit-text-stroke: 1.5px #5a1200;
+
+
+
+
+                 
 }
 .projectPage
 {
@@ -289,6 +302,11 @@ h5
       a
       {
         font-size: large;
+      }
+      .navLinks a
+      {
+        padding-left: 15px;
+        padding-right: 15px;
       }
     }
 @media (max-width:900px)

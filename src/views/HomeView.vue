@@ -6,7 +6,7 @@
       <router-link to="/project/Journeys_and_Jazz_The_Fruits_of_the_Gods" class="noHoverColor">
         <div class="featured row" v-if="postFeat">
           <transition>
-            <img src="..\assets\JNJFotG.png" class="featuredImg leftCol">
+            <img src="..\assets\JNJFotG.png" alt="Image featuring the logo for Journeys and Jazz: The Fruits of the Gods with its 4 characters in the foreground." class="featuredImg leftCol">
           </transition>
       <div class="featuredText col">
           <h1 class= featuredTitle><u>{{ "Journeys and Jazz: The Fruits of the Gods" }}</u></h1>
@@ -14,9 +14,9 @@
             <u>Part 3 Released!</u>
           </h2>
           <div class="featuredSmallImg" @mouseleave="changeFeatImg('https://github.com/RemiliaRosalia/website/blob/main/dist/img/JNJFotG.5cb790a4.png?raw=true')">
-            <img src="../assets/JNJ/Colosseum.png" width="25%" @mouseover="changeFeatImg('https://raw.githubusercontent.com/RemiliaRosalia/website/refs/heads/main/dist/img/Colosseum.38b73c1f.png')" >
-            <img src="../assets/JNJ/DataKuzgar.png" width="25%" @mouseover="changeFeatImg('https://raw.githubusercontent.com/RemiliaRosalia/website/refs/heads/main/dist/img/DataKuzgar.8b8f3a82.png')">
-            <img src="../assets/JNJ/OldMan.png" width="25%" @mouseover="changeFeatImg('https://github.com/RemiliaRosalia/website/blob/gh-pages/img/OldMan.873f7bfe.png?raw=true')">
+            <img src="../assets/JNJ/Colosseum.png" width="25%" alt="8 character sprites facing eachother with a textbox of an announcer introducing a party called Journeys and Jazz who will fight The Adventuring Party" @mouseover="changeFeatImg('https://raw.githubusercontent.com/RemiliaRosalia/website/refs/heads/main/dist/img/Colosseum.38b73c1f.png')" >
+            <img src="../assets/JNJ/DataKuzgar.png" width="25%" alt="An in-game screenshot of a combat scenario." @mouseover="changeFeatImg('https://raw.githubusercontent.com/RemiliaRosalia/website/refs/heads/main/dist/img/DataKuzgar.8b8f3a82.png')">
+            <img src="../assets/JNJ/OldMan.png" width="25%" alt="A character saying that he is an invincible old man and no magic can hope to hurt him." @mouseover="changeFeatImg('https://github.com/RemiliaRosalia/website/blob/gh-pages/img/OldMan.873f7bfe.png?raw=true')">
           </div>
 
             <p>This new update to Journeys and Jazz: The Fruits of the Gods
